@@ -4,16 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raoo.org</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-95ZVMLH8QC"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-95ZVMLH8QC');
-  </script>
 </head>
 <body>
   <div class="sub-header">
@@ -24,10 +18,10 @@
 
       <div class="nav-links">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="Aboutus.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="Contact.html">Contact Us</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Aboutus.html">ABOUT US</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="Contact.html">CONTACT US</a></li>
         </ul>
       </div>
     </nav>
@@ -35,12 +29,12 @@
   </div>
 
   <section class="location">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15955.
-    336118231295!2d36.7711766!3d-1.2727165999999999!3m2!1i1024!2i768!4f13
-    .1!5e0!3m2!1sen!2ske!4v1693205022077!5m2!1sen!2ske" width="600"
-     height="450" style="border:0;" allowfullscreen="" loading="lazy"
-     referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31910.
+    330577696237!2d36.72928707780223!3d-1.3000355038773466!2m3!1f0!2f0!3f0!3m2!
+    1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a87694dbb4d%3A0x38cd00f105754da9!2sSoweto
+    %20Sda%20Church!5e0!3m2!1sen!2ske!4v1702908471678!5m2!1sen!2ske" width="600" height="450" style="border:0;"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
   </section>
 
   <section class="contact-us">
@@ -49,7 +43,7 @@
         <div>
           <span>
             <h5>Working Hours</h5>
-            <p>Monday-Friday: 8A.M to 5P.M <br>
+            <p>Monday-Friday: 8:00 a.m to 4:30 p.m <br>
               Saturday-Sunday: Closed
             </p>
           </span>
@@ -78,12 +72,13 @@
     </div>
 
     <div class="contact-col">
-      <form action="form-handler.php" method="post">
+      <form action="https://formsubmit.co/jolink345@gmail.com" method="POST">
+        <h3> GET IN TOUCH</h3>
         <input type="text" name="name" placeholder="Enter your name" required>
         <input type="email" name="email" placeholder="Enter Email Address" required>
         <input type="text" name="subject" placeholder="Enter your subject" required>
         <textarea rows="8" placeholder="Message" required></textarea>
-        <button type="submit" class="hero-btn red-btn"> Send Message</button>
+        <button type="submit"> Send Message</button>
       </form>
     </div>
 
@@ -93,5 +88,24 @@
     <p>Copyright&copy; 2023. R.J Construction Ltd. All Right Reserved.
     </p>
   </section>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail (){
+            Email.send({
+          Host : "smtp.gmail.com",
+          Username : "johnlink238@gmail.com",
+          Password : "Riley37605744",
+          To : 'jolink345@gmail.com',
+          From : document.getElementById ("email") .value,
+          Subject : "New Contact Form Enguiry",
+          Body : "Name:" + document.getElementById("name").value
+               + "<br> Email: " + document.getElementById("emsil"). value
+               +"<br> message: " + document.getElementById("message"). value
+      }).then(
+        message => alert("Message Sent Successfully")
+      );
+    }
+  </script>
 </body>
 </html>
