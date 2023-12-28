@@ -227,6 +227,32 @@ nav ul li a{
     background: #efefef;
 }
 
+.Servi {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.Servi h3{
+    padding-top: 10px;
+    padding-bottom: 3px;
+    margin: auto;
+    font-size: 26px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.Servi h1{
+        font-size: 20px;
+        font-weight: lighter;
+        padding-left: 20px;
+}
+
+.Servi p{
+    font-size: 20px;
+}
+
 .service-box {
     width: 80%;
     display: flex;
