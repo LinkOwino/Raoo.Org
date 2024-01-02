@@ -1,21 +1,16 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get form data
     $name = $_POST["name"];
     $email = $_POST["email"];
     $message = $_POST["message"];
 
-    // Set up email
-    $to = "raoojariwo@email.com";
+    $to = "raoojariwo@gmail.com"; 
     $subject = "New Contact Form Submission";
-    $headers = "From: $email";
 
-    // Compose the email message
-    $email_message = "Name: $name\n";
-    $email_message .= "Email: $email\n";
-    $email_message .= "Message:\n$message";
+    $headers = "From: $email" . "\r\n" .
+               "Reply-To: $email" . "\r\n" .
+               "X-Mailer: PHP/" . phpversion();
 
-    // Send email
-    mail($to, $subject, $email_message, $headers);
+    mail($to, $subject, $message, $headers);
 }
 ?>
