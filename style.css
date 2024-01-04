@@ -565,31 +565,3 @@ hr{
         font-size: 14px;
     }
   }
-
-  .For{
-    width:80%;
-    margin: auto;
-    padding: 80px 0;
-  }
-
-  form h3{
-    color:orange;
-    margin-bottom: 20px;
-  }
-
-  .For input, .For textarea{
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 14px;
-    outline: none;
-    border: 1px solid #ccc;
-  }
-
-  .For button {
-    padding: 5px 10px;
-    background-color: orange;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
