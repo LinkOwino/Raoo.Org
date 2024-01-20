@@ -111,9 +111,22 @@ nav ul li a{
 }
 
 @media screen and (max-width: 770px) {
-    .Content h1{
-        font-size: 40px;
+    .logo {
+        width: 60px;
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        border-radius: 1px;
     }
+
+    .Content h1{
+        font-size: 26px;
+    }
+
+    .Content p{
+        font-size: 12px;
+    }
+
     .content-btn a{
         display: block;
         margin: 20px auto;
@@ -209,15 +222,23 @@ nav ul li a{
     color: black;
 }
 
-@media screen and (max-width: 770px) {
-    .Title-text h1{
+@media screen and (max-width: 720px) {
+    .Title-text p{
         font-size: 24px;
+    }
+
+    .Title-text h1{
+        font-size: 18px;
         padding-left: 50px;
         padding-right: 50px;
     }
     .features{
         flex-basis: 100%;
     }   
+    .features h1{
+        font-size: 20px;
+    }
+
     .feature-img{
         flex-basis: 100%;
     }
