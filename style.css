@@ -7,7 +7,7 @@
     background: linear-gradient(rgba(0,0,0,0.5), #009688),url(autocad.png);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 80vh;
 }
 
 .logo {
@@ -25,7 +25,7 @@
 }
 
 .Content h1{
-    font-size: 80px;
+    font-size: 45px;
     font-family: Georgia;
 }
 
@@ -110,7 +110,7 @@ nav ul li a{
     margin-top: 15px;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 720px) {
     .logo {
         width: 60px;
         position: absolute;
@@ -137,6 +137,7 @@ nav ul li a{
     width:100%;
     padding: 60px 0;
     background-color: #efefef;
+    margin-top: -20px;
 }
 
 .Title-text {
@@ -222,13 +223,13 @@ nav ul li a{
     color: black;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 720px) {
     .Title-text p{
         font-size: 20px;
     }
 
     .Title-text h1{
-        font-size: 16px;
+        font-size: 18px;
         padding-left: 50px;
         padding-right: 50px;
     }
@@ -263,7 +264,7 @@ nav ul li a{
     padding-top: 10px;
     padding-bottom: 3px;
     margin: auto;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     position: relative;
     z-index: 1;
@@ -271,13 +272,13 @@ nav ul li a{
 }
 
 .Servi h1{
-        font-size: 20px;
+        font-size: 19px;
         font-weight: lighter;
         padding-left: 20px;
 }
 
 .Servi p{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .service-box {
@@ -345,7 +346,7 @@ hr{
     opacity: 1;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 720px) {
     .service1{
         flex-basis: 100%;
         margin-bottom: 30px;
@@ -357,7 +358,7 @@ hr{
     }
 
     .service-desc p{
-        font-size: 10px;
+        font-size: 12px;
     }
     hr{
         margin: 5px auto;
@@ -435,18 +436,18 @@ hr{
     padding-top: 10px;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 720px) {
     .project1{
         flex-basis: 100%;
         margin-bottom: 30px;
     }
 
-    .text h3, .text h2{
-        font-size: 40px;
+    .text h3, .text h2, .text h4{
+        font-size: 20px;
     }
 
     .text a{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
@@ -535,7 +536,7 @@ hr{
         margin-bottom: 8px;
   }
 
-  @media screen and (max-width: 770px) {
+  @media screen and (max-width: 720px) {
     .About {
         flex-direction: column; 
         align-items: center; 
@@ -611,7 +612,7 @@ hr{
     transform: translateY(-8px);
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 720px) {
     .testimonial-col{
         flex-basis: 100%;
     }
@@ -737,7 +738,7 @@ hr{
   }
   
 
-  @media screen and (max-width: 770px) 
+  @media screen and (max-width: 720px) 
   {
     .footer-left, .footer-right{
         font-size: 14px;
