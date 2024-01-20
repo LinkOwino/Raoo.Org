@@ -222,13 +222,13 @@ nav ul li a{
     color: black;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 770px) {
     .Title-text p{
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .Title-text h1{
-        font-size: 18px;
+        font-size: 16px;
         padding-left: 50px;
         padding-right: 50px;
     }
@@ -461,6 +461,7 @@ hr{
         justify-content: space-between;
         flex-wrap: wrap;
         padding: 20px;
+        margin-top: -40px;
     }
 
     .container{
@@ -540,6 +541,10 @@ hr{
         align-items: center; 
     }
 
+    .container h3,  .container h4{
+        font-size: 20px;
+    }
+
     .about-col,.about-col1 {
         max-width: none;
         padding: 0; 
@@ -548,6 +553,7 @@ hr{
     .about-col p, .about-col1 p {
         padding-left: 50px;
         padding-right: 50px;
+        font-size: 18px;
     }
     
 } 
